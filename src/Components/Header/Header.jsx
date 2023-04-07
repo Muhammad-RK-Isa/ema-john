@@ -47,7 +47,7 @@ const Header = () => {
                     <button onClick={ () => setIsToggled( !isToggled ) }>{ isToggled ? <RxCross2 size={ 28 } /> : <BiMenu size={ 28 } /> }</button>
                 </div>
 
-                <div className={ `${ isToggled ? "flex" : "hidden" } flex-col gap-2 bg-gradient-to-r from-accent to-slate-500 rounded-lg p-4 text-lg fixed top-14 right-2` }>
+                <div className={ `${ isToggled ? "flex" : "hidden" } flex-col gap-2 bg-gradient-to-r from-accent to-slate-500 rounded-lg p-4 text-lg fixed top-16 right-2` }>
                     { navLinks.map( navLink =>
                         <Link
                             key={ navLink.id }
